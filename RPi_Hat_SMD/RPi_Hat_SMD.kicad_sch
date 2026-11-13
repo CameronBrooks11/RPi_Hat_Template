@@ -44,7 +44,7 @@
 			)
 		)
 		(instances
-			(project "RPi_Hat"
+			(project "RPi_Hat_SMD"
 				(path "/e52104c0-5e63-4805-bdc7-1c811ae5b73b"
 					(page "2")
 				)
