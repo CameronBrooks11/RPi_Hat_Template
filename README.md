@@ -1,45 +1,72 @@
-% RPi B+ Hat
+# RPi_Hat_Template
 
-Raspberry Pi B+ Hat
-============================
+KiCad 10 project templates for a
+[Raspberry Pi HAT](https://github.com/raspberrypi/hats): the board outline,
+mounting holes and 40-pin GPIO connector, ready to design on.
 
-Expansion Board
-----------------------------
+| Template                      | GPIO connector                                 | Board         |
+| ----------------------------- | ---------------------------------------------- | ------------- |
+| [`RPi_Hat_THT`](RPi_Hat_THT/) | 2x20 through-hole pin header                   | 65 x 56 mm    |
+| [`RPi_Hat_SMD`](RPi_Hat_SMD/) | Samtec HLE-120-02 SMD pass-through socket      | 65 x 56.5 mm  |
 
-This is a project template for a 
-[Raspberry Pi B+ Hat](https://github.com/raspberrypi/hats).
+<p>
+  <img src="RPi_Hat_THT/meta/brd.png" width="48%" alt="Through-hole template, top view">
+  <img src="RPi_Hat_SMD/meta/brd.png" width="48%" alt="SMD template, top view">
+</p>
 
-This base project includes a PCB edge defined according to 
-[this specification](https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.pdf).
-Both a thru-hole and a surface mount connector are provided, along with a different
-PCB edge for each. Just keep the PCB edge and connector type that you're using for your design
-and delete the others.
+Each template has:
 
-The component footprints used in this template are [here](https://github.com/devbisme/RPi_Hat.pretty).
+- the outline from the
+  [HAT mechanical drawing](https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.pdf),
+  with the display flex notch and the optional camera flex slot, and the
+  drawing's dimensions on `Dwgs.User`;
+- four board-only mounting holes, H1 to H4;
+- the GPIO connector J1, placed and locked, with all 40 pins named in the
+  schematic and left unconnected;
+- its own `RPi_Hat` symbol and footprint libraries, referenced through
+  `${KIPRJMOD}`, so the project opens without installing anything.
 
-The board outline looks like this:
+## Using a template
 
-<img src="brd.png" style="width:100%">
+1. Clone this repository, or copy one template directory out of it.
+2. In KiCad choose **File → New Project from Template**, open the user
+   templates tab and point it at the directory that contains the template
+   directories.
+3. Pick a template and name the project. KiCad copies the files and renames
+   them after the project.
+4. In the schematic, wire the GPIO pins the design uses and put a no-connect
+   flag on the others.
+5. Delete the camera flex slot from `Edge.Cuts` if the board does not need it.
 
-Using the Template
-----------------------------
+## What the checks report
 
-To use the Raspberry Pi Hat template with the through-hole connector, do the following:
+Run with KiCad 10.0.6, all severities, schematic parity on:
 
-1. Open the schematic. Remove the SMD connector, J1.
-2. Generate the schematic netlist.
-3. Generate the .cmp file. (The J2 connector will be the only component in it.)
-4. Open the PCB. Hover your mouse over the connector and hit **e** to edit it. Select the J1 SMD connector. In the **Move and Place** section of the **Footprint Properties** window, select the **Free** radio button. Then click **OK**. The SMD connector should now be unlocked so it can be removed.
-5. Read in the netlist from the schematic. In the **Extra Footprints** section of the **Netlist** dialog window, select the **Delete** radio button. Then click **Read Current Netlist**. The J1 SMD connector should disappear. Then click **Close**.
-6. Finally, delete the upper two arcs and the edge of the board outline.
+```sh
+kicad-cli sch erc --severity-all RPi_Hat_THT/RPi_Hat_THT.kicad_sch
+kicad-cli pcb drc --severity-all --schematic-parity RPi_Hat_THT/RPi_Hat_THT.kicad_pcb
+```
 
-To use the Raspberry Pi Hat template with the SMD connector, do the following:
+| Template      | ERC | DRC | Unconnected | Parity |
+| ------------- | --- | --- | ----------- | ------ |
+| `RPi_Hat_THT` | 52  | 0   | 0           | 0      |
+| `RPi_Hat_SMD` | 52  | 80  | 0           | 0      |
 
-1. Open the schematic. Remove the through-hole connector, J2.
-2. Generate the schematic netlist.
-3. Generate the .cmp file. (The J1 connector will be the only component in it.)
-4. Open the PCB. Hover your mouse over the connector and hit **e** to edit it. Select the J2 through-hole connector. In the **Move and Place** section of the **Footprint Properties** window, select the **Free** radio button. Then click **OK**. The through-hole connector should now be unlocked so it can be removed.
-5. Read in the netlist from the schematic. In the **Extra Footprints** section of the **Netlist** dialog window, select the **Delete** radio button. Then click **Read Current Netlist**. The J2 through-hole connector should disappear. Then click **Close**.
-6. Finally, delete the lower two arcs and the edge of the board outline.
+The ERC count is the bare connector: 40 unconnected pins and 12 power pins
+with nothing driving them. It goes away as the design is wired.
 
-(c)2015-2021 Dave Vandenbout.
+The SMD count comes from the socket footprint. Each of the 40 pads sits
+0.127 mm from the hole its pin passes through, under the board's 0.25 mm hole
+clearance, and the silkscreen outline crosses each pad. Decide for your
+fabricator whether to relax the rule or change the footprint.
+
+## Credit
+
+Derived from [RPi_Hat_Template](https://github.com/devbisme/RPi_Hat_Template)
+by Dave Vandenbout, which laid both connectors and both outlines over each
+other for the user to delete one. The footprints come from his
+[RPi_Hat.pretty](https://github.com/devbisme/RPi_Hat.pretty).
+
+## License
+
+MIT. See [LICENSE](LICENSE).

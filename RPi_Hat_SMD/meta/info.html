@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Raspberry Pi HAT (SMD pass-through socket)</title>
+</head>
+<body>
+<h1>Raspberry Pi HAT, SMD pass-through socket</h1>
+<p>A 65 mm x 56.5 mm board to the
+<a href="https://github.com/raspberrypi/hats">Raspberry Pi HAT</a> mechanical
+specification: the board outline with the display flex notch, the optional
+camera flex slot, four mounting holes and a Samtec HLE-120-02 surface-mount
+pass-through GPIO socket (J1).</p>
+<p>The schematic holds the 40-pin GPIO connector with every pin named and
+unconnected. Wire up what the design uses and put a no-connect flag on the
+rest.</p>
+<p>The symbol and the footprints are in the project's own
+<code>RPi_Hat</code> libraries, so nothing else has to be installed.</p>
+<p>The socket footprint puts each pad 0.127 mm from the hole its pin passes
+through, under this board's 0.25 mm hole clearance, and runs its silkscreen
+outline over the pads. DRC reports both until you change the rule or the
+footprint.</p>
+<p><img src="brd.png" style="width:100%" alt="Top view of the board" /></p>
+<p>Derived from RPi_Hat_Template by Dave Vandenbout. MIT licence.</p>
+</body>
+</html>
