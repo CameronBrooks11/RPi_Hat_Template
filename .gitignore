@@ -1,0 +1,13 @@
+# KiCad: backups, caches, autosaves and per-user state
+*-backups/
+*.kicad_prl
+*.lck
+*.bak
+*-bak
+fp-info-cache
+_autosave-*
+\#auto_saved_files#
+~*
+
+# Check reports
+*.rpt
