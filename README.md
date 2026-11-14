@@ -1,8 +1,9 @@
 # RPi_Hat_Template
 
-KiCad 10 project templates for a
-[Raspberry Pi HAT](https://github.com/raspberrypi/hats): the board outline,
-mounting holes and 40-pin GPIO connector, ready to design on.
+KiCad 10 project templates for a Raspberry Pi
+[HAT+](https://datasheets.raspberrypi.com/hat/hat-plus-specification.pdf): the
+board outline, mounting holes, 40-pin GPIO connector and the ID EEPROM a HAT+
+needs, ready to design on.
 
 | Template                      | GPIO connector                                 | Board         |
 | ----------------------------- | ---------------------------------------------- | ------------- |
@@ -21,8 +22,12 @@ Each template has:
   with the display flex notch and the optional camera flex slot, and the
   drawing's dimensions on `Dwgs.User`;
 - four board-only mounting holes, H1 to H4;
-- the GPIO connector J1, placed and locked, with all 40 pins named in the
-  schematic and left unconnected;
+- the GPIO connector J1, placed and locked, with its power pins wired to
+  +5V, +3V3 and GND and the other 26 pins named and left unconnected;
+- the HAT+ ID EEPROM, placed and routed beside J1: a CAT24C32 (U1) at address
+  0x50 on ID_SD and ID_SC, 3.9 kΩ pull-ups R1 and R2, and write protect held
+  high by R3 (1 kΩ) at test point TP1;
+- a GND pour on `B.Cu`, which also carries the +3V3 routing;
 - its own `RPi_Hat` symbol and footprint libraries, referenced through
   `${KIPRJMOD}`, so the project opens without installing anything.
 
@@ -37,10 +42,14 @@ Each template has:
 4. In the schematic, wire the GPIO pins the design uses and put a no-connect
    flag on the others.
 5. Delete the camera flex slot from `Edge.Cuts` if the board does not need it.
+6. Program the EEPROM with the board's HAT+ ID data before calling it a HAT+:
+   pull TP1 low to write it, with the tools in the specification's appendix B.
+   If the board is not to be a HAT+, delete U1, R1 to R3 and TP1, and leave
+   ID_SD and ID_SC unconnected; the specification allows nothing else on them.
 
 ## What the checks report
 
-Run with KiCad 10.0.6, all severities, schematic parity on:
+Run with KiCad 10.0.8, all severities, schematic parity on:
 
 ```sh
 kicad-cli sch erc --severity-all RPi_Hat_THT/RPi_Hat_THT.kicad_sch
@@ -49,11 +58,15 @@ kicad-cli pcb drc --severity-all --schematic-parity RPi_Hat_THT/RPi_Hat_THT.kica
 
 | Template      | ERC | DRC | Unconnected | Parity |
 | ------------- | --- | --- | ----------- | ------ |
-| `RPi_Hat_THT` | 52  | 0   | 0           | 0      |
-| `RPi_Hat_SMD` | 52  | 0   | 0           | 0      |
+| `RPi_Hat_THT` | 26  | 0   | 0           | 0      |
+| `RPi_Hat_SMD` | 26  | 0   | 0           | 0      |
 
-The ERC count is the bare connector: 40 unconnected pins and 12 power pins
-with nothing driving them. It goes away as the design is wired.
+The ERC count is the 26 GPIO pins left for the design. It goes away as they
+are wired or flagged.
+
+The `B.Cu` pour reaches each of J1's through-hole GND pins with one thermal
+spoke, as the pins sit 2.54 mm apart; `RPi_Hat_THT.kicad_dru` allows one spoke
+for J1 and nothing else.
 
 The SMD socket puts each of its 40 pads 0.127 mm from the hole its pin passes
 through, under the board's 0.25 mm hole clearance. `RPi_Hat_SMD.kicad_dru`
