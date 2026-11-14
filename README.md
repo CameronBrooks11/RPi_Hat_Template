@@ -25,9 +25,11 @@ Each template has:
 - the GPIO connector J1, placed and locked, with its power pins wired to
   +5V, +3V3 and GND, and a global label on each of the other 26 GPIO pins,
   named for its BCM number (`GPIO2` to `GPIO27`);
-- the HAT+ ID EEPROM, placed and routed beside J1: a CAT24C32 (U1) at address
-  0x50 on ID_SD and ID_SC, 3.9 kΩ pull-ups R1 and R2, and write protect held
-  high by R3 (1 kΩ) at test point TP1;
+- the HAT+ ID EEPROM, placed and routed beside J1, as in the circuit in
+  Raspberry Pi's HAT design guide: a CAT24C32 (U1) at address 0x50 (the
+  specification's Standard class) on ID_SD and ID_SC, 3.9 kΩ pull-ups R1 and
+  R2, 100 nF decoupling C1, and write protect held high by R3 (1 kΩ) at test
+  point TP1, with solder jumper JP1 (open) to tie it to GND;
 - a GND pour on `B.Cu`, which also carries the +3V3 routing;
 - its own `RPi_Hat` symbol and footprint libraries, referenced through
   `${KIPRJMOD}`, so the project opens without installing anything.
@@ -45,9 +47,11 @@ Each template has:
    net, so keep the names for those pins.
 5. Delete the camera flex slot from `Edge.Cuts` if the board does not need it.
 6. Program the EEPROM with the board's HAT+ ID data before calling it a HAT+:
-   pull TP1 low to write it, with the tools in the specification's appendix B.
-   If the board is not to be a HAT+, delete U1, R1 to R3 and TP1, and leave
-   ID_SD and ID_SC unconnected; the specification allows nothing else on them.
+   pull TP1 low, or bridge JP1, to write it, with the tools in the
+   specification's appendix B. Leave JP1 open afterwards so the contents stay
+   locked. If the board is not to be a HAT+, delete U1, R1 to R3, C1, TP1 and
+   JP1, and leave ID_SD and ID_SC unconnected; the specification allows
+   nothing else on them.
 
 ## What the checks report
 

@@ -18,8 +18,9 @@ design to use a pin.</p>
 <p>It also holds the ID EEPROM the
 <a href="https://datasheets.raspberrypi.com/hat/hat-plus-specification.pdf">HAT+
 specification</a> requires: a CAT24C32 at address 0x50 on ID_SD and ID_SC, with
-3.9k pull-ups and write protect held high through 1k at test point TP1. Delete
-U1, R1-R3 and TP1 if the board is not to be a HAT+, and leave ID_SD and ID_SC
+3.9k pull-ups, 100n decoupling, and write protect held high through 1k. Pull
+test point TP1 low, or bridge solder jumper JP1, to write it. Delete U1, R1-R3,
+C1, TP1 and JP1 if the board is not to be a HAT+, and leave ID_SD and ID_SC
 unconnected.</p>
 <p>The symbol and the footprints are in the project's own
 <code>RPi_Hat</code> libraries, so nothing else has to be installed.</p>
