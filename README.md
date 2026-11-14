@@ -50,15 +50,15 @@ kicad-cli pcb drc --severity-all --schematic-parity RPi_Hat_THT/RPi_Hat_THT.kica
 | Template      | ERC | DRC | Unconnected | Parity |
 | ------------- | --- | --- | ----------- | ------ |
 | `RPi_Hat_THT` | 52  | 0   | 0           | 0      |
-| `RPi_Hat_SMD` | 52  | 80  | 0           | 0      |
+| `RPi_Hat_SMD` | 52  | 0   | 0           | 0      |
 
 The ERC count is the bare connector: 40 unconnected pins and 12 power pins
 with nothing driving them. It goes away as the design is wired.
 
-The SMD count comes from the socket footprint. Each of the 40 pads sits
-0.127 mm from the hole its pin passes through, under the board's 0.25 mm hole
-clearance, and the silkscreen outline crosses each pad. Decide for your
-fabricator whether to relax the rule or change the footprint.
+The SMD socket puts each of its 40 pads 0.127 mm from the hole its pin passes
+through, under the board's 0.25 mm hole clearance. `RPi_Hat_SMD.kicad_dru`
+allows that gap between the socket's own pads and holes and nowhere else.
+Check that your fabricator can hold 0.127 mm copper to hole before ordering.
 
 ## Credit
 

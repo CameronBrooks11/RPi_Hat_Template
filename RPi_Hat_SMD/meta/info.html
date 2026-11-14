@@ -16,10 +16,10 @@ unconnected. Wire up what the design uses and put a no-connect flag on the
 rest.</p>
 <p>The symbol and the footprints are in the project's own
 <code>RPi_Hat</code> libraries, so nothing else has to be installed.</p>
-<p>The socket footprint puts each pad 0.127 mm from the hole its pin passes
-through, under this board's 0.25 mm hole clearance, and runs its silkscreen
-outline over the pads. DRC reports both until you change the rule or the
-footprint.</p>
+<p>The socket puts each pad 0.127 mm from the hole its pin passes through,
+under this board's 0.25 mm hole clearance. The project's design rules allow
+that gap between the socket's own pads and holes and nowhere else; check that
+your fabricator can hold it before ordering.</p>
 <p><img src="brd.png" style="width:100%" alt="Top view of the board" /></p>
 <p>Derived from RPi_Hat_Template by Dave Vandenbout. MIT licence.</p>
 </body>

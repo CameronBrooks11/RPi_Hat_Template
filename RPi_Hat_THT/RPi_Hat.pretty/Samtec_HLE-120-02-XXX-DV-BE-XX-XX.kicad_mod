@@ -50,8 +50,8 @@
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -2.54 -25.4)
-		(end 2.54 -25.4)
+		(start -4 -25.4)
+		(end 3.6 -25.4)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -60,8 +60,8 @@
 		(uuid "c59a3049-d859-441d-9042-4fd544633c20")
 	)
 	(fp_line
-		(start -2.54 25.4)
-		(end -2.54 -25.4)
+		(start -4 25.4)
+		(end -4 -25.4)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -70,18 +70,8 @@
 		(uuid "b9d98e17-3941-42db-838e-7dcc32b62844")
 	)
 	(fp_line
-		(start 2.54 -25.4)
-		(end 2.54 25.4)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "b01a06c8-b643-4db0-a6c6-6bc4194cebeb")
-	)
-	(fp_line
-		(start 2.54 25.4)
-		(end -2.54 25.4)
+		(start 3.6 25.4)
+		(end -4 25.4)
 		(stroke
 			(width 0.254)
 			(type solid)
