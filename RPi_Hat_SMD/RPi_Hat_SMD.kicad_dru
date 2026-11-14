@@ -1,0 +1,10 @@
+(version 1)
+
+# The Samtec HLE-120-02 pass-through socket puts each SMD pad 0.127 mm from
+# the hole its Raspberry Pi pin passes through. That is the part's geometry,
+# so allow it between the socket's own pads and holes only; every other
+# copper-to-hole gap keeps the board's 0.25 mm. Check 0.127 mm with your
+# fabricator before ordering.
+(rule "HLE-120-02 pad to pin hole"
+  (constraint hole_clearance (min 0.12mm))
+  (condition "A.memberOfFootprint('RPi_Hat:Samtec_HLE-120-02-XXX-DV-BE-XX-XX') && B.memberOfFootprint('RPi_Hat:Samtec_HLE-120-02-XXX-DV-BE-XX-XX')"))
