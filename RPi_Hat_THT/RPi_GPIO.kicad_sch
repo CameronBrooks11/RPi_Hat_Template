@@ -2030,7 +2030,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2e1ab814-c6b5-45c1-b3cb-ec2843441aef")
+		(uuid "2d38d130-8a30-48e6-aeec-d70833f13e1f")
 	)
 	(symbol
 		(lib_id "RPi_Hat:+3V3")
@@ -2042,7 +2042,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "911cbe02-52d3-497c-be85-72d615e28be1")
+		(uuid "a89b7fd1-fe0a-45cc-97ba-94a3e6b85596")
 		(property "Reference" "#PWR01"
 			(at 185.42 67.31 0)
 			(hide yes)
@@ -2080,7 +2080,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "aed685d0-306e-4684-a825-548b65ae3d61")
+			(uuid "48639669-c281-4024-b9ee-a0ff465d83ad")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2099,7 +2099,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "6e3a6f12-6546-4b61-81c9-ddee00b8bd2f")
+		(uuid "5feebd4f-8b24-4244-81a8-a764a72b2228")
 	)
 	(symbol
 		(lib_id "RPi_Hat:+3V3")
@@ -2111,7 +2111,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "47683b78-6da0-4676-8d7c-0dbb47ecc288")
+		(uuid "00820304-4a27-487b-9077-995322544443")
 		(property "Reference" "#PWR02"
 			(at 185.42 87.63 0)
 			(hide yes)
@@ -2149,7 +2149,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "06280bd3-7638-4ed8-b7d6-b1f0b7666e05")
+			(uuid "21f2988c-4c9c-44e5-aeaf-2b920f046670")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2168,7 +2168,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a2fab456-1402-46f9-95f1-9536d17afa52")
+		(uuid "e55c814b-9b73-4b0a-b49c-d7dab2ecd9ff")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2180,7 +2180,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c14f5474-f691-4942-a77f-234f55511d3c")
+		(uuid "61a12f5f-967f-45d3-baa9-6a733eab3856")
 		(property "Reference" "#PWR03"
 			(at 185.42 77.47 0)
 			(hide yes)
@@ -2218,7 +2218,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "c25314ca-28e9-4773-8a92-f05b4088d0f2")
+			(uuid "027da262-9f38-4814-bbbd-4df36ffc9a26")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2237,7 +2237,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "3ee82ccb-02df-4302-8abe-2a25e0092d35")
+		(uuid "387a5152-ec96-4dc0-9d67-20f06122060d")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2249,7 +2249,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1d338fb0-c4d3-413d-b12c-ee9881f53eb4")
+		(uuid "af7641f7-9344-49ca-aace-576e4ef68e7e")
 		(property "Reference" "#PWR04"
 			(at 185.42 97.79 0)
 			(hide yes)
@@ -2287,7 +2287,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a3685e8-fced-475d-93ca-d3e2417f95cf")
+			(uuid "ecb4c985-1b55-4009-b436-0aac6cff2319")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2306,7 +2306,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bc6e3b8b-bbfe-4a24-86a6-f56ee982f7b9")
+		(uuid "d17da5ca-134e-4372-b9e1-63309bb5ad08")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2318,7 +2318,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "704ac306-1114-4b1d-9fe4-a183d3d0a6ca")
+		(uuid "01bace46-6167-47eb-a352-c028e1cdbd3f")
 		(property "Reference" "#PWR05"
 			(at 185.42 115.57 0)
 			(hide yes)
@@ -2356,7 +2356,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9d18c5f8-0d89-43a0-93cf-d93b0d1f76fc")
+			(uuid "caeccd19-89ec-4966-9496-51e3061fa9e6")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2375,7 +2375,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "43ad5bbd-bb65-4cc1-b61d-772bed930ace")
+		(uuid "235d148b-ee67-49ef-8024-01fd7215d0a3")
 	)
 	(symbol
 		(lib_id "RPi_Hat:+5V")
@@ -2387,7 +2387,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6f88e8bb-eeef-4d79-82f4-1685f5db99d3")
+		(uuid "f8dfb8e2-862d-4bfe-9e40-bc50d540a54e")
 		(property "Reference" "#PWR06"
 			(at 238.76 67.31 0)
 			(hide yes)
@@ -2425,7 +2425,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2c2c39e0-d17e-4f8e-8930-6f6b7ba01b93")
+			(uuid "b91769a3-c548-44cc-b63d-f4dd42b9556f")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2444,7 +2444,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "b66a443b-31cf-4225-8bc9-1f5259d105b7")
+		(uuid "65389505-9127-408b-a223-af5f61f5b4d9")
 	)
 	(symbol
 		(lib_id "RPi_Hat:+5V")
@@ -2456,7 +2456,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "4279bb99-b3f8-41e8-87a5-b0ab7fa3b4d8")
+		(uuid "f356451f-1507-4fa5-944e-c6f8cff65ebd")
 		(property "Reference" "#PWR07"
 			(at 238.76 69.85 0)
 			(hide yes)
@@ -2494,7 +2494,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "680aa07f-44b6-472d-bcf6-aebde76bc8e4")
+			(uuid "b17c21aa-dee9-4f26-96dc-7154b24d3107")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2513,7 +2513,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "85b95291-82e8-4b36-a71e-596d40b12e41")
+		(uuid "63474838-2a8d-4900-9518-a65d05e4c129")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2525,7 +2525,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "589f2ddd-8a10-4b72-b5eb-9a407fdc212d")
+		(uuid "193c7670-ba61-4748-91c0-4680791382f4")
 		(property "Reference" "#PWR08"
 			(at 238.76 72.39 0)
 			(hide yes)
@@ -2563,7 +2563,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9ce30b46-091e-4ba9-8bd1-36d313f8ec2a")
+			(uuid "ed1bbcd8-23b5-43cd-910b-5d822860d8d2")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2582,7 +2582,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "aaa3548a-5aa1-4415-8c16-f73ef29b67c1")
+		(uuid "728360e1-d726-4719-9ee3-32b608f3fbad")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2594,7 +2594,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0d2c443e-4a0a-46c5-a023-c24bce9e5824")
+		(uuid "f9150d10-517b-41bb-9be3-1fedd3247534")
 		(property "Reference" "#PWR09"
 			(at 238.76 82.55 0)
 			(hide yes)
@@ -2632,7 +2632,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6f42b9c-6932-47b4-881f-9fd1bf639225")
+			(uuid "27759463-b504-40c9-91e6-7565ef252729")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2651,7 +2651,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "81a26184-d05a-426a-adf3-6ec43c094015")
+		(uuid "8afc8217-f1c0-4941-8597-cde89f2dc819")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2663,7 +2663,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e39b792b-1457-4d0c-8b3e-b9b11f1fb0de")
+		(uuid "663bca1d-e715-4bb7-a5d5-a32e472b0db8")
 		(property "Reference" "#PWR10"
 			(at 238.76 90.17 0)
 			(hide yes)
@@ -2701,7 +2701,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "643e774e-cf89-405e-9fd1-a9dffc7499ed")
+			(uuid "d6dd8922-3bee-4f84-a2b0-62e0544a87e8")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2720,7 +2720,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "f0ef477d-ee80-49e9-92cf-c9a6d9c7238a")
+		(uuid "410820b4-e70f-43f6-a403-3d94d82ed1f5")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2732,7 +2732,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5341b983-e55f-484e-a3d9-dbbdf99d41fc")
+		(uuid "31353732-90a6-4b2e-a106-e4c540cdc47d")
 		(property "Reference" "#PWR11"
 			(at 238.76 102.87 0)
 			(hide yes)
@@ -2770,7 +2770,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6a290f21-7b3b-47dd-b34d-d88ec1971bc0")
+			(uuid "4a6c6a43-8c58-4897-a2da-780663b4477b")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2789,7 +2789,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "31afe2a9-0b96-45d9-9971-19427e07aee1")
+		(uuid "48502d49-79e1-4824-a86a-658987e27534")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -2801,7 +2801,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "68d46cda-0e5d-456d-8921-94a0ccda68cd")
+		(uuid "84365352-b927-4f89-8732-573b4fd06f42")
 		(property "Reference" "#PWR12"
 			(at 238.76 107.95 0)
 			(hide yes)
@@ -2839,7 +2839,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ac82bb8-f475-4600-877c-aec7cafc20ca")
+			(uuid "c8a3746f-6f8c-4558-a163-30fac1027406")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2858,7 +2858,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "39aa345c-ff00-4215-986d-f4b7cc513293")
+		(uuid "3128b3c8-a0dc-4815-b735-7a577a93a7e6")
 	)
 	(label "ID_SD"
 		(at 180.34 101.6 180)
@@ -2868,7 +2868,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "41070c88-8fa2-4b96-9fbe-9ef82e8e4452")
+		(uuid "ebd47164-bd27-4674-9650-28dc1612b96c")
 	)
 	(wire
 		(pts
@@ -2878,7 +2878,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "83cfa994-bdd8-452f-a131-54ad5559a7a3")
+		(uuid "54a3122e-ccd8-443b-9f34-ef38580104bc")
 	)
 	(label "ID_SC"
 		(at 238.76 101.6 0)
@@ -2888,7 +2888,813 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "5eac0009-841c-4f17-a11a-e839c9c870b7")
+		(uuid "59c5f3c2-312f-4a11-8a04-7ebc66aeccad")
+	)
+	(wire
+		(pts
+			(xy 185.42 71.12) (xy 182.88 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a106c28-0d74-4cf2-b233-6a96ec09fd06")
+	)
+	(global_label "GPIO2"
+		(shape bidirectional)
+		(at 182.88 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7e170b15-7689-4f04-a977-8fe08a5c136f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 73.66) (xy 182.88 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8595f585-e3d2-474e-9438-3d4b40da6bb7")
+	)
+	(global_label "GPIO3"
+		(shape bidirectional)
+		(at 182.88 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ea643bc3-d177-40ea-b2da-e4ffa10cb50c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 76.2) (xy 182.88 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ac4bb65-db9f-4313-91da-c42ea67a9da9")
+	)
+	(global_label "GPIO4"
+		(shape bidirectional)
+		(at 182.88 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8282ab7a-5ca1-4c65-8755-4abb39f1ee2d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 76.2) (xy 236.22 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3c4fec-6d08-476f-98c1-f257d5c5a165")
+	)
+	(global_label "GPIO14"
+		(shape bidirectional)
+		(at 236.22 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "01ff433e-a3d2-4c08-9e49-cf3851203b74")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 78.74) (xy 236.22 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "270a8069-32f3-41cd-bd17-d5c824c78911")
+	)
+	(global_label "GPIO15"
+		(shape bidirectional)
+		(at 236.22 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0cdfbadc-2e66-4dd6-b360-e1f71c473ea3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 81.28) (xy 182.88 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "075f0a74-a0b8-4c05-b61d-433b2b94574e")
+	)
+	(global_label "GPIO17"
+		(shape bidirectional)
+		(at 182.88 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "121087a2-c04a-4488-98e6-35bb085d7184")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 81.28) (xy 236.22 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "086675b0-405a-4845-bd29-7ca7e0da05a0")
+	)
+	(global_label "GPIO18"
+		(shape bidirectional)
+		(at 236.22 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91ae6a58-729a-4ce0-acca-d5442562f112")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 83.82) (xy 182.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1f26a7a-5641-40cc-9207-ba34deaa6401")
+	)
+	(global_label "GPIO27"
+		(shape bidirectional)
+		(at 182.88 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8f43c7cf-9498-464e-9618-5f8be08083c3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 86.36) (xy 182.88 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee4c6029-d546-46ac-887c-31ddc817d1bc")
+	)
+	(global_label "GPIO22"
+		(shape bidirectional)
+		(at 182.88 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc06d552-6b5f-42ea-b2e7-4f55130abda5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 86.36) (xy 236.22 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2fbcf6-8daf-48f6-af02-ce5596b0d797")
+	)
+	(global_label "GPIO23"
+		(shape bidirectional)
+		(at 236.22 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6abbc0f3-c274-46c7-aa64-1c1cb9a7b743")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 88.9) (xy 236.22 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29648f0b-6ac4-4832-97d5-4c54966679f8")
+	)
+	(global_label "GPIO24"
+		(shape bidirectional)
+		(at 236.22 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b13f3699-9314-4046-9f01-72d5d11b15cc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 91.44) (xy 182.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89d6cd4f-5c73-436a-a399-d1f4f1b02436")
+	)
+	(global_label "GPIO10"
+		(shape bidirectional)
+		(at 182.88 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dbd825c9-b03f-476d-a034-121c151f5dd9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 93.98) (xy 182.88 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fa2cd28-f297-4765-8c6b-1d8ef7cdd3e0")
+	)
+	(global_label "GPIO9"
+		(shape bidirectional)
+		(at 182.88 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19c0fe4a-4536-495d-9490-7cb6edc46eb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 93.98) (xy 236.22 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe5c062-f6a4-4ad8-86e9-6664782257ff")
+	)
+	(global_label "GPIO25"
+		(shape bidirectional)
+		(at 236.22 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "96040065-b285-445f-8f9a-3596b5d465b4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 96.52) (xy 182.88 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c729cf7-d26f-451f-a8a2-84070da839b5")
+	)
+	(global_label "GPIO11"
+		(shape bidirectional)
+		(at 182.88 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b83e3233-6d42-4bef-928d-ed9e2bf40b6e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 96.52) (xy 236.22 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7704c7f-1b9c-478a-894a-98fee5ed01d4")
+	)
+	(global_label "GPIO8"
+		(shape bidirectional)
+		(at 236.22 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "876b7384-b227-455f-b7fb-001dc571e2b8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 99.06) (xy 236.22 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e646ed96-9b4c-46f0-80b6-f76bbfaf14d5")
+	)
+	(global_label "GPIO7"
+		(shape bidirectional)
+		(at 236.22 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a20d919b-3703-4376-bd6e-943491644817")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 104.14) (xy 182.88 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1afb89d1-956f-4c8c-8b7a-b0a03222de10")
+	)
+	(global_label "GPIO5"
+		(shape bidirectional)
+		(at 182.88 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56c4cfad-2bd6-444c-b38a-5e646b3ab3ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 106.68) (xy 182.88 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8bd7b88-c7bb-4d67-9f09-76d301019517")
+	)
+	(global_label "GPIO6"
+		(shape bidirectional)
+		(at 182.88 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "574cc234-0d4d-491a-91d3-9f6c322483db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 106.68) (xy 236.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a3a705-9acb-441c-9638-bd41b350c362")
+	)
+	(global_label "GPIO12"
+		(shape bidirectional)
+		(at 236.22 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "41ab0986-e609-4116-96d0-c2db5b297357")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 109.22) (xy 182.88 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2d8f009-7555-41c1-bba1-a4c8dbd44510")
+	)
+	(global_label "GPIO13"
+		(shape bidirectional)
+		(at 182.88 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c9b8218-4071-4d0a-8c25-419ffc2ec9d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 111.76) (xy 182.88 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a236e98-7756-47c2-9337-32b9cc0380c4")
+	)
+	(global_label "GPIO19"
+		(shape bidirectional)
+		(at 182.88 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87273fab-3cfa-4f1b-8aca-d1cdcdcff394")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 111.76) (xy 236.22 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13a9dfea-8832-4c54-b5f3-76f03446650a")
+	)
+	(global_label "GPIO16"
+		(shape bidirectional)
+		(at 236.22 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4fc6be96-d421-42b2-b6ae-60a422b2cbce")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 185.42 114.3) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b1c3072-c2b9-4dd7-a94a-147bd0375cb1")
+	)
+	(global_label "GPIO26"
+		(shape bidirectional)
+		(at 182.88 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "85508ca5-278c-4b83-a8cc-f7c0905b0d60")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 114.3) (xy 236.22 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ebb4728-5a43-41ca-ab61-54fc5b015f90")
+	)
+	(global_label "GPIO20"
+		(shape bidirectional)
+		(at 236.22 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "35df90b5-7a02-4280-a2f8-746347b7bac6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 233.68 116.84) (xy 236.22 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48fbeb75-c90c-4e97-b7a2-ee4deffe18b4")
+	)
+	(global_label "GPIO21"
+		(shape bidirectional)
+		(at 236.22 116.84 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91610105-d92f-4d98-95d2-0ce3eb1fd3e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 0 0 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "RPi_Hat:CAT24C32")
@@ -2900,7 +3706,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1d37c141-adb0-49f5-aaaa-22fcff001bc6")
+		(uuid "9737cef7-57cf-4a4b-b69e-5e0df877b35c")
 		(property "Reference" "U1"
 			(at 76.2 71.12 0)
 			(effects
@@ -2938,28 +3744,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "786987e6-ccd5-41af-9bf4-4780bbcd9381")
+			(uuid "4581d2e2-9ed0-4475-a0b4-ad7537037093")
 		)
 		(pin "2"
-			(uuid "6cf3b735-bf1d-4b1c-9277-a94bb513b037")
+			(uuid "9e1de054-f4b3-4955-8021-7d70435b2f36")
 		)
 		(pin "3"
-			(uuid "25c9373c-9d44-4fc4-b55a-83236a64097c")
+			(uuid "f6d01713-16ce-48ea-9719-789ded1d3968")
 		)
 		(pin "4"
-			(uuid "cbdd3ec2-46db-411e-8826-cbbfb72bd7ce")
+			(uuid "5f343d06-6034-4e4b-8c4c-968ee35b76ad")
 		)
 		(pin "5"
-			(uuid "1c10c5dc-baaf-4ce8-8c41-39d235a351ac")
+			(uuid "bff81863-4924-410c-9838-80552fda923d")
 		)
 		(pin "6"
-			(uuid "0d3451be-8156-4be9-b05d-8181330c1d7b")
+			(uuid "a1917f8b-ca7d-4080-98dd-224676cc0eb0")
 		)
 		(pin "7"
-			(uuid "b313b62f-6274-4caa-868b-225999ef7ae4")
+			(uuid "24338501-41f3-4623-a294-ed084c91fd05")
 		)
 		(pin "8"
-			(uuid "70c497ce-2053-4ab6-9e98-1769382847b9")
+			(uuid "f5fb1b8e-35b1-4438-9540-1a5dcac170db")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -2980,7 +3786,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "73cd07d2-ad86-43bc-86ef-7d3593d727f7")
+		(uuid "9821dd91-baba-47de-be7c-aa4983a6d012")
 		(property "Reference" "#PWR13"
 			(at 81.28 71.12 0)
 			(hide yes)
@@ -3017,7 +3823,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "aed33d7e-95e6-4fce-a0b9-0d57cf134073")
+			(uuid "ab9a4a80-ee7d-463e-900f-1f2e2a5131e5")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3038,7 +3844,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b0e0ca8c-8643-4b45-aa6c-b82ea3613b02")
+		(uuid "5fdd51c2-a8ee-4460-ade9-046c75ee626e")
 		(property "Reference" "#PWR14"
 			(at 81.28 86.36 0)
 			(hide yes)
@@ -3075,7 +3881,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f307937-f610-4707-98c8-3b34ccbe9f07")
+			(uuid "2be98aeb-3d36-4ffe-8d53-c4f4c63aaf0b")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3094,7 +3900,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "53c38bda-be45-4519-9de1-95e59a97f784")
+		(uuid "6d1518a2-2ed5-47b7-af6b-05a442a3a7e8")
 	)
 	(wire
 		(pts
@@ -3104,7 +3910,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "7badc933-7ccf-4a05-9cfd-194d98fd81b7")
+		(uuid "076f5b13-a80f-4986-b3dd-7f6855509560")
 	)
 	(wire
 		(pts
@@ -3114,7 +3920,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "be207934-24af-43a6-aea3-ef62e124c9ed")
+		(uuid "2486f3da-b3f1-4965-83a2-5e8d2992037c")
 	)
 	(wire
 		(pts
@@ -3124,19 +3930,19 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "4607ad17-bba2-4f41-93bf-f2666400d964")
+		(uuid "0760b507-7d23-4a28-82e0-594971b6e902")
 	)
 	(junction
 		(at 66.04 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "73fefa4d-589f-48cd-82ec-740342a39ebd")
+		(uuid "3958393a-5ca0-44d7-94c9-23bd14458120")
 	)
 	(junction
 		(at 66.04 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e37f7190-9075-411e-b873-5dae7585ca62")
+		(uuid "4c19cdf8-c6de-451e-9260-30247e1b6792")
 	)
 	(symbol
 		(lib_id "RPi_Hat:GND")
@@ -3148,7 +3954,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "712edc53-6da5-40b9-86db-3b296d352ad7")
+		(uuid "8d171b18-5fd6-4000-887d-982101c593c7")
 		(property "Reference" "#PWR15"
 			(at 68.58 83.82 0)
 			(hide yes)
@@ -3185,7 +3991,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "c322119d-6895-4009-af20-82ad3192f5c4")
+			(uuid "b0ad061a-d3b5-4359-b159-c12dbdcda7c5")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3204,7 +4010,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "bd36036c-d9be-4e09-b326-79887f5e2295")
+		(uuid "6f2453ea-bb83-4f80-a49e-145aad567788")
 	)
 	(label "ID_SD"
 		(at 116.84 77.47 0)
@@ -3214,7 +4020,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "514bb708-d852-4841-9037-a35d887c4de8")
+		(uuid "32fc4f4c-64ce-4e19-93c0-17d7eacfcab7")
 	)
 	(wire
 		(pts
@@ -3224,7 +4030,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "ab5452b9-55b3-47ba-bcce-751475c30b25")
+		(uuid "cfedeb1c-1220-4b7c-86bc-4031d5320238")
 	)
 	(label "ID_SC"
 		(at 116.84 80.01 0)
@@ -3234,7 +4040,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "b5a7539f-a3a0-4651-b2f5-a3a4482d3d62")
+		(uuid "ac648403-9556-49c6-842b-1e393a970550")
 	)
 	(symbol
 		(lib_id "RPi_Hat:R")
@@ -3246,7 +4052,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "59c9b518-0735-4a6d-9ca9-ed8366a4cdd8")
+		(uuid "08dc3714-5211-4316-84c0-c41996f3d5e6")
 		(property "Reference" "R1"
 			(at 98.425 69.85 0)
 			(effects
@@ -3284,10 +4090,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4c84f00-1cba-4d9a-b7e1-b8aa2d7644f1")
+			(uuid "bcb4b9b8-3f14-41fc-89bd-176f4a6c61ac")
 		)
 		(pin "2"
-			(uuid "d14ca3f8-db9d-46cb-a09c-feda479c4ccc")
+			(uuid "7a39428c-aec7-4553-836c-043a8d96e66c")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3308,7 +4114,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8ae5e72f-d8d1-43b6-9dd4-d6aec449d514")
+		(uuid "860b99ce-baf8-4e8e-b8cf-0eb5d287dd3d")
 		(property "Reference" "#PWR16"
 			(at 99.06 66.04 0)
 			(hide yes)
@@ -3345,7 +4151,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "cbef84f2-22fd-4952-b164-d503459902dd")
+			(uuid "184376cc-580b-455d-a3ab-79827ae0bf10")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3364,13 +4170,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "c2b7ca73-f23b-4faf-b748-b523dca19c60")
+		(uuid "04d0f2c1-208d-4d57-9bd5-09ebbad8c95b")
 	)
 	(junction
 		(at 96.52 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "00b8c7a3-77c3-43fe-a611-68cc4023f051")
+		(uuid "32c0d1d5-29ef-445e-aa62-2a303c0fe654")
 	)
 	(symbol
 		(lib_id "RPi_Hat:R")
@@ -3382,7 +4188,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d523f86d-25bd-4993-b545-911b21508d3d")
+		(uuid "9d65969f-59cc-48a8-997c-56b0cb31399f")
 		(property "Reference" "R2"
 			(at 108.585 69.85 0)
 			(effects
@@ -3420,10 +4226,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6d95b5ef-c60e-4140-9572-c432837a1a62")
+			(uuid "e3fec32e-5c70-4538-9c44-c9d586fca46a")
 		)
 		(pin "2"
-			(uuid "d3c5a3e2-5965-4222-92ef-328d03777918")
+			(uuid "0ad3c45a-4b58-4835-b51f-285e1c00d2e4")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3444,7 +4250,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "19ef9818-4861-4480-a43c-1720f53ae566")
+		(uuid "2c906303-c569-4c13-a3b4-d66a73c785f9")
 		(property "Reference" "#PWR17"
 			(at 109.22 66.04 0)
 			(hide yes)
@@ -3481,7 +4287,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "79d94629-00ee-45ee-99a7-582d080d5ddd")
+			(uuid "84f6f744-8a2d-4c93-92dc-e92984f3afb8")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3500,13 +4306,13 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "5cf8aff5-74cd-48b6-8ac4-0407eb38dc2a")
+		(uuid "d7a64f11-914b-4b7f-a08a-ebd2b4f60a99")
 	)
 	(junction
 		(at 106.68 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d67c48b1-aeec-43cd-b49a-8d2189684bef")
+		(uuid "72ddba70-3e52-4369-80a7-ba22ac45dffd")
 	)
 	(wire
 		(pts
@@ -3516,7 +4322,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "a63348c0-b3f3-4bfd-8f8b-c20c0f4814f4")
+		(uuid "217f73da-bc09-4b91-9eb2-300ba7cb069f")
 	)
 	(symbol
 		(lib_id "RPi_Hat:R")
@@ -3528,7 +4334,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f843e97e-84bd-4858-b95a-646e4542f3fb")
+		(uuid "8c7e64f8-9795-4a94-a0c5-297f4c4a5b5d")
 		(property "Reference" "R3"
 			(at 98.425 85.09 0)
 			(effects
@@ -3566,10 +4372,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ab768933-e379-4256-9486-b1d5fe58ca6d")
+			(uuid "4921bc45-e5ae-4763-ae2e-d49801273364")
 		)
 		(pin "2"
-			(uuid "1b754252-23be-4c4d-966d-7ab56ba40f4b")
+			(uuid "1c44386e-8d5c-493a-bbd3-c84c7518e8c2")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3590,7 +4396,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "eac36edc-e964-4902-bf47-e5647f87509c")
+		(uuid "2df9be6f-fc48-4321-b178-d9a4ebead0a8")
 		(property "Reference" "#PWR18"
 			(at 99.06 88.9 0)
 			(hide yes)
@@ -3627,7 +4433,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "175e6713-26ce-4110-9ca8-ed02d5978133")
+			(uuid "d16b7ab0-1040-4c9a-9409-c2bcd13421d8")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3648,7 +4454,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c11dd4ec-c653-44b3-be1b-e4e6d299f8e3")
+		(uuid "e9c73fbc-ef80-4bfa-8eb4-7f8d74bd4403")
 		(property "Reference" "TP1"
 			(at 90.805 86.36 0)
 			(effects
@@ -3686,7 +4492,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "40764d7a-9060-40d7-b3fb-e6723233690f")
+			(uuid "18bcb15e-07c4-4828-a3f8-3bc5f409bb55")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3701,7 +4507,7 @@
 		(at 92.71 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b2c350ba-98d9-471f-a830-c6a5c986213c")
+		(uuid "c1577094-df20-434e-992d-e6c6d766a48c")
 	)
 	(text "HAT+ ID EEPROM (Raspberry Pi HAT+ specification, chapter 3):\naddress 0x50, 3.9k pull-ups on ID_SD/ID_SC, write protect held high by 1k;\npull TP1 low to write the EEPROM. Nothing else may connect to ID_SD or ID_SC."
 		(exclude_from_sim no)
@@ -3712,7 +4518,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "960439a7-060c-4b92-940c-bfa85d95b51e")
+		(uuid "a41fed36-1ee2-4057-b3b8-4bda7b26f1aa")
 	)
 	(symbol
 		(lib_id "RPi_Hat:+5V")
@@ -3724,7 +4530,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e7dcb5f1-d2fd-4fad-9c45-4481b63ffac5")
+		(uuid "a9e5f1dc-c011-4634-93c6-859fadccda88")
 		(property "Reference" "#PWR19"
 			(at 53.34 119.38 0)
 			(hide yes)
@@ -3761,7 +4567,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2b2879c-228b-42b9-8c28-0476614ef385")
+			(uuid "722d1c13-5e9a-4cbe-b511-d3612df76db2")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3780,7 +4586,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "936afcfc-ef41-419f-8f1d-3004774dc45b")
+		(uuid "c4b5d55a-32ae-4e5e-bfc7-b896eaef2557")
 	)
 	(symbol
 		(lib_id "RPi_Hat:PWR_FLAG")
@@ -3792,7 +4598,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "37f7dcc3-08bf-4072-a5d4-c221444aac41")
+		(uuid "d17c2d99-d762-4f12-8070-50435c407b52")
 		(property "Reference" "#FLG01"
 			(at 53.34 124.46 0)
 			(hide yes)
@@ -3829,7 +4635,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "78e4309a-6c4c-4aa8-a9dd-f8c9fae53b96")
+			(uuid "4fba25c7-31a5-4425-9570-128d8666872a")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3850,7 +4656,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b726a16e-cd57-467c-a136-a3c6af74d6a7")
+		(uuid "99f865e7-ac2f-4f63-a2cc-d08ad37d5e58")
 		(property "Reference" "#PWR20"
 			(at 63.5 119.38 0)
 			(hide yes)
@@ -3887,7 +4693,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f5b8e79-975c-4bdb-aa23-1822d34a45db")
+			(uuid "a97fdea4-41e2-49dd-8436-f7a6bf326072")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3906,7 +4712,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "2c8634dd-ae1d-4653-b3ca-0176dd2649c7")
+		(uuid "a50c40e2-8239-46f0-9e4f-92c32cb08ae6")
 	)
 	(symbol
 		(lib_id "RPi_Hat:PWR_FLAG")
@@ -3918,7 +4724,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d2ee4263-e3b5-4678-a7c4-c3eb10489c80")
+		(uuid "d8835038-a8da-4807-946b-51ee7baac3e6")
 		(property "Reference" "#FLG02"
 			(at 63.5 124.46 0)
 			(hide yes)
@@ -3955,7 +4761,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "eaffafe8-d3eb-4029-adaf-0a09af6300be")
+			(uuid "f9b5c329-7003-4888-956a-eac824231404")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -3976,7 +4782,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "46a5c099-69a8-4e96-8c7f-57862d2c6d4a")
+		(uuid "6c41f0e5-f836-4ccc-b5a7-11d94f0e4b6d")
 		(property "Reference" "#PWR21"
 			(at 73.66 119.38 0)
 			(hide yes)
@@ -4013,7 +4819,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "cc921c00-638b-41e8-822d-6791598e88b1")
+			(uuid "da15b921-fda2-441d-a907-738d25c94788")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -4032,7 +4838,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "e8c3c694-5a66-4c8b-a0e1-444f1f055e5b")
+		(uuid "c21643de-0e32-40e1-9148-c517992ca42f")
 	)
 	(symbol
 		(lib_id "RPi_Hat:PWR_FLAG")
@@ -4044,7 +4850,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "5e916c4c-15b4-4b03-af94-94d5a51c1ae3")
+		(uuid "442d718d-1da3-49d1-a463-6988985ad7e4")
 		(property "Reference" "#FLG03"
 			(at 73.66 114.3 0)
 			(hide yes)
@@ -4081,7 +4887,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "55282758-6d8f-4d23-9093-56891f17b1a3")
+			(uuid "bc9d6987-81af-4a92-9ba1-55e1bd2e67c5")
 		)
 		(instances
 			(project "RPi_Hat_THT"
@@ -4101,6 +4907,6 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "38a941cd-cf1f-4e63-84f7-1f759586419d")
+		(uuid "e6c119b7-be0b-48a2-99e6-5557756d2123")
 	)
 )

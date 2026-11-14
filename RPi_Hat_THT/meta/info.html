@@ -12,8 +12,9 @@ specification: the board outline with the display flex notch, the optional
 camera flex slot, four mounting holes and a 2x20 through-hole GPIO header
 (J1).</p>
 <p>The schematic holds the 40-pin GPIO connector with its power pins wired to
-+5V, +3V3 and GND and the other pins named and unconnected. Wire up what the
-design uses and put a no-connect flag on the rest.</p>
++5V, +3V3 and GND, and a global label on each of the other 26 GPIO pins named
+for its BCM number (GPIO2 to GPIO27). Place the same label anywhere in the
+design to use a pin.</p>
 <p>It also holds the ID EEPROM the
 <a href="https://datasheets.raspberrypi.com/hat/hat-plus-specification.pdf">HAT+
 specification</a> requires: a CAT24C32 at address 0x50 on ID_SD and ID_SC, with

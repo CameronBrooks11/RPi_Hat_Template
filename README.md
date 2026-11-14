@@ -23,7 +23,8 @@ Each template has:
   drawing's dimensions on `Dwgs.User`;
 - four board-only mounting holes, H1 to H4;
 - the GPIO connector J1, placed and locked, with its power pins wired to
-  +5V, +3V3 and GND and the other 26 pins named and left unconnected;
+  +5V, +3V3 and GND, and a global label on each of the other 26 GPIO pins,
+  named for its BCM number (`GPIO2` to `GPIO27`);
 - the HAT+ ID EEPROM, placed and routed beside J1: a CAT24C32 (U1) at address
   0x50 on ID_SD and ID_SC, 3.9 kΩ pull-ups R1 and R2, and write protect held
   high by R3 (1 kΩ) at test point TP1;
@@ -39,8 +40,9 @@ Each template has:
    directories.
 3. Pick a template and name the project. KiCad copies the files and renames
    them after the project.
-4. In the schematic, wire the GPIO pins the design uses and put a no-connect
-   flag on the others.
+4. To use a GPIO pin, place its global label (`GPIO17`, say) on the part
+   that connects to it, in any sheet. A label of that name anywhere joins the
+   net, so keep the names for those pins.
 5. Delete the camera flex slot from `Edge.Cuts` if the board does not need it.
 6. Program the EEPROM with the board's HAT+ ID data before calling it a HAT+:
    pull TP1 low to write it, with the tools in the specification's appendix B.
@@ -61,8 +63,9 @@ kicad-cli pcb drc --severity-all --schematic-parity RPi_Hat_THT/RPi_Hat_THT.kica
 | `RPi_Hat_THT` | 26  | 0   | 0           | 0      |
 | `RPi_Hat_SMD` | 26  | 0   | 0           | 0      |
 
-The ERC count is the 26 GPIO pins left for the design. It goes away as they
-are wired or flagged.
+The 26 ERC findings are warnings, one `isolated_pin_label` for each GPIO pin
+whose label is used nowhere else yet. Each goes away as its pin is used; the
+ones left at the end are the pins the design leaves free.
 
 The `B.Cu` pour reaches each of J1's through-hole GND pins with one thermal
 spoke, as the pins sit 2.54 mm apart; `RPi_Hat_THT.kicad_dru` allows one spoke
