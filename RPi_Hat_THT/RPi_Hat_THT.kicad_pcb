@@ -1146,15 +1146,15 @@
 			(uuid "99a30259-d6d7-46ae-8336-7bd4a6a291b4")
 		)
 		(embedded_fonts no)
-		(model "Pin_Headers.3dshapes/Pin_Header_Straight_2x20.wrl"
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x20_P2.54mm_Vertical.step"
 			(offset
-				(xyz 0 0 0)
+				(xyz -1.27 24.13 -1.6)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 90)
+				(xyz 0 180 0)
 			)
 		)
 	)

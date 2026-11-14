@@ -6,7 +6,7 @@ mounting holes and 40-pin GPIO connector, ready to design on.
 
 | Template                      | GPIO connector                                 | Board         |
 | ----------------------------- | ---------------------------------------------- | ------------- |
-| [`RPi_Hat_THT`](RPi_Hat_THT/) | 2x20 through-hole pin header                   | 65 x 56 mm    |
+| [`RPi_Hat_THT`](RPi_Hat_THT/) | 2x20 through-hole female header, underneath    | 65 x 56 mm    |
 | [`RPi_Hat_SMD`](RPi_Hat_SMD/) | Samtec HLE-120-02 SMD pass-through socket      | 65 x 56.5 mm  |
 
 <p>
