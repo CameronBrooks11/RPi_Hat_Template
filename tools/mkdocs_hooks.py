@@ -39,11 +39,11 @@ def role(name):
     if name == "3.3V": return "`+3V3`"
     if name == "5V": return "`+5V`"
     if name == "GND": return "`GND`"
-    if "ID_SD" in name: return "ID EEPROM SDA (`ID_SD`)"
-    if "ID_SC" in name: return "ID EEPROM SCL (`ID_SC`)"
+    if "ID_SD" in name: return "EEPROM `ID_SD`"
+    if "ID_SC" in name: return "EEPROM `ID_SC`"
     m = re.match(r"BCM(\d+)", name)
     assert m, f"unexpected J1 pin name {name}"
-    return f"global label `GPIO{m.group(1)}`"
+    return f"label `GPIO{m.group(1)}`"
 
 
 def gpio_table():
@@ -52,7 +52,7 @@ def gpio_table():
     labels = set(re.findall(r'\(global_label "([^"]+)"', open(SHEET).read()))
     claimed = {f"GPIO{m.group(1)}" for n in p.values() if (m := re.match(r"BCM(\d+)", n)) and "ID_" not in n}
     assert labels == claimed, f"sheet labels {sorted(labels ^ claimed)} differ from the J1 pin names"
-    out = ["| Pin | J1 pin name | In the template | Pin | J1 pin name | In the template |",
+    out = ["| Pin | J1 pin name | Template | Pin | J1 pin name | Template |",
            "| ---: | --- | --- | ---: | --- | --- |"]
     for odd in range(1, 41, 2):
         out.append(f"| {odd} | {p[odd]} | {role(p[odd])} | {odd + 1} | {p[odd + 1]} | {role(p[odd + 1])} |")

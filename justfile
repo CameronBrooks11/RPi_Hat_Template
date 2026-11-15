@@ -31,8 +31,10 @@ renders:
     render RPi_Hat_THT/RPi_Hat_THT.kicad_pcb top THT_top
     render RPi_Hat_THT/RPi_Hat_THT.kicad_pcb bottom THT_bottom
     render RPi_Hat_SMD/RPi_Hat_SMD.kicad_pcb top SMD_top
-    kicad-cli sch export svg -o "$out/sch" RPi_Hat_THT/RPi_Hat_THT.kicad_sch >/dev/null
-    mv "$out/sch/RPi_Hat_THT-RPi_GPIO.svg" "$out/gpio_sheet.svg"; rm -r "$out/sch"
+    # The GPIO sheet without its frame, cropped (in sheet mm) to the EEPROM block and J1 with its labels
+    kicad-cli sch export svg --exclude-drawing-sheet -o "$out/sch" RPi_Hat_THT/RPi_Hat_THT.kicad_sch >/dev/null
+    python3 -c 'import re, sys; s = open(sys.argv[1]).read(); s, n = re.subn(r"width=\"[\d.]+mm\" height=\"[\d.]+mm\" viewBox=\"[\d. ]+\"", "width=\"223mm\" height=\"82mm\" viewBox=\"42 52 223 82\"", s, count=1); assert n == 1; open(sys.argv[2], "w").write(s)' "$out/sch/RPi_Hat_THT-RPi_GPIO.svg" "$out/gpio_sheet.svg"
+    rm -r "$out/sch"
     ls "$out"
 
 # Build the docs site into site/ (after just renders), failing on any warning
