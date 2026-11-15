@@ -1,0 +1,8 @@
+(version 1)
+
+# J1's GND pins sit 2.54 mm apart in two rows, so the B.Cu GND pour can only
+# reach each one with a single thermal spoke. Allow that for J1 alone; every
+# other pad keeps the usual two.
+(rule "J1 GND thermal spokes"
+  (constraint min_resolved_spokes 1)
+  (condition "A.memberOfFootprint('J1')"))
