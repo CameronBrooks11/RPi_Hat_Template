@@ -21,3 +21,24 @@ check:
         || fail "$t: DRC" "$tmp/drc.rpt"
       echo "$t: DRC clean, schematic parity clean"
     done
+
+# Render the docs' pictures with kicad-cli into docs/renders/: both boards and the GPIO sheet
+renders:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    out=docs/renders; rm -rf "$out"; mkdir -p "$out"
+    render() { kicad-cli pcb render --side "$2" --width 1400 --height 1200 --quality basic --background opaque -o "$out/$3.png" "$1" >/dev/null; }
+    render RPi_Hat_THT/RPi_Hat_THT.kicad_pcb top THT_top
+    render RPi_Hat_THT/RPi_Hat_THT.kicad_pcb bottom THT_bottom
+    render RPi_Hat_SMD/RPi_Hat_SMD.kicad_pcb top SMD_top
+    kicad-cli sch export svg -o "$out/sch" RPi_Hat_THT/RPi_Hat_THT.kicad_sch >/dev/null
+    mv "$out/sch/RPi_Hat_THT-RPi_GPIO.svg" "$out/gpio_sheet.svg"; rm -r "$out/sch"
+    ls "$out"
+
+# Build the docs site into site/ (after just renders), failing on any warning
+docs:
+    uv run --no-project --with-requirements docs/requirements.txt mkdocs build --strict
+
+# Serve the docs site at http://127.0.0.1:8000 while editing
+serve:
+    uv run --no-project --with-requirements docs/requirements.txt mkdocs serve

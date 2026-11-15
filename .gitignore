@@ -11,3 +11,7 @@ _autosave-*
 
 # Check reports
 *.rpt
+
+# Docs site: pictures from just renders, output from just docs
+docs/renders/
+site/
