@@ -1,0 +1,58 @@
+site_name: rpi-hat-kicad
+site_description: KiCad 10 project templates for a Raspberry Pi HAT+, with the ID EEPROM placed and routed
+site_url: https://cameronbrooks11.github.io/rpi-hat-kicad/
+repo_url: https://github.com/CameronBrooks11/rpi-hat-kicad
+repo_name: CameronBrooks11/rpi-hat-kicad
+edit_uri: edit/main/docs/
+copyright: MIT
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md
+  - Templates: templates.md
+  - HAT+ checklist: hat-plus.md
+  - ID EEPROM: eeprom.md
+  - GPIO pinout: pinout.md
+  - Mechanical: mechanical.md
+  - Board design: board.md
+  - Development: development.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.top
+    - search.highlight
+    - toc.follow
+
+extra_css:
+  - assets/extra.css
+
+hooks:
+  - tools/mkdocs_hooks.py
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true

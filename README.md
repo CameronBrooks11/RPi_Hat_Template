@@ -1,9 +1,11 @@
-# RPi_Hat_Template
+# rpi-hat-kicad
 
 KiCad 10 project templates for a Raspberry Pi
 [HAT+](https://datasheets.raspberrypi.com/hat/hat-plus-specification.pdf): the
 board outline, mounting holes, 40-pin GPIO connector and the ID EEPROM a HAT+
-needs, ready to design on.
+needs, placed, routed and passing DRC, ready to design on.
+
+**Documentation: <https://cameronbrooks11.github.io/rpi-hat-kicad/>**
 
 | Template                      | GPIO connector                                 | Board         |
 | ----------------------------- | ---------------------------------------------- | ------------- |
@@ -15,68 +17,24 @@ needs, ready to design on.
   <img src="RPi_Hat_SMD/meta/brd.png" width="48%" alt="SMD template, top view">
 </p>
 
-Each template has:
+Each template has the outline from Raspberry Pi's HAT mechanical drawing, four
+mounting holes, the GPIO connector J1 with its power pins wired and a global
+label (`GPIO2` to `GPIO27`) on every other GPIO pin, and the HAT+ ID EEPROM
+placed and routed beside J1. Each carries its own `RPi_Hat` libraries, so a
+project opens without installing anything.
 
-- the outline from the
-  [HAT mechanical drawing](https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.pdf),
-  with the display flex notch and the optional camera flex slot, and the
-  drawing's dimensions on `Dwgs.User`;
-- four board-only mounting holes, H1 to H4;
-- the GPIO connector J1, placed and locked, with its power pins wired to
-  +5V, +3V3 and GND, and a global label on each of the other 26 GPIO pins,
-  named for its BCM number (`GPIO2` to `GPIO27`);
-- the HAT+ ID EEPROM, placed and routed beside J1, as in the circuit in
-  Raspberry Pi's HAT design guide: a CAT24C32 (U1) at address 0x50 (the
-  specification's Standard class) on ID_SD and ID_SC, 3.9 kΩ pull-ups R1 and
-  R2, 100 nF decoupling C1, and write protect held high by R3 (1 kΩ) at test
-  point TP1, with solder jumper JP1 (open) to tie it to GND;
-- a GND pour on `B.Cu`, which also carries the +3V3 routing;
-- its own `RPi_Hat` symbol and footprint libraries, referenced through
-  `${KIPRJMOD}`, so the project opens without installing anything.
+- **New HAT:** [create a project from a template](https://cameronbrooks11.github.io/rpi-hat-kicad/getting-started/).
+- **Which template:** [through-hole or SMD](https://cameronbrooks11.github.io/rpi-hat-kicad/templates/); it decides how high the board sits above the Pi.
+- **Calling it a HAT+:** the [HAT+ checklist](https://cameronbrooks11.github.io/rpi-hat-kicad/hat-plus/) and [programming the ID EEPROM](https://cameronbrooks11.github.io/rpi-hat-kicad/eeprom/).
 
-## Using a template
+## Development
 
-1. Clone this repository, or copy one template directory out of it.
-2. In KiCad choose **File → New Project from Template**, open the user
-   templates tab and point it at the directory that contains the template
-   directories.
-3. Pick a template and name the project. KiCad copies the files and renames
-   them after the project.
-4. To use a GPIO pin, place its global label (`GPIO17`, say) on the part
-   that connects to it, in any sheet. A label of that name anywhere joins the
-   net, so keep the names for those pins.
-5. Delete the camera flex slot from `Edge.Cuts` if the board does not need it.
-6. Program the EEPROM with the board's HAT+ ID data before calling it a HAT+:
-   pull TP1 low, or bridge JP1, to write it, with the tools in the
-   specification's appendix B. Leave JP1 open afterwards so the contents stay
-   locked. If the board is not to be a HAT+, delete U1, R1 to R3, C1, TP1 and
-   JP1, and leave ID_SD and ID_SC unconnected; the specification allows
-   nothing else on them.
-
-## What the checks report
-
-`just check` runs ERC and DRC (all severities, schematic parity, zones
-refilled) on both templates and fails on any change from the table below; it
-also fails if the two templates' `RPi_Hat` libraries differ. CI runs it in the
-`kicad/kicad:10.0.6` image on every pull request and push to `main`.
-
-| Template      | ERC | DRC | Unconnected | Parity |
-| ------------- | --- | --- | ----------- | ------ |
-| `RPi_Hat_THT` | 26  | 0   | 0           | 0      |
-| `RPi_Hat_SMD` | 26  | 0   | 0           | 0      |
-
-The 26 ERC findings are warnings, one `isolated_pin_label` for each GPIO pin
-whose label is used nowhere else yet. Each goes away as its pin is used; the
-ones left at the end are the pins the design leaves free.
-
-The `B.Cu` pour reaches each of J1's through-hole GND pins with one thermal
-spoke, as the pins sit 2.54 mm apart; `RPi_Hat_THT.kicad_dru` allows one spoke
-for J1 and nothing else.
-
-The SMD socket puts each of its 40 pads 0.127 mm from the hole its pin passes
-through, under the board's 0.25 mm hole clearance. `RPi_Hat_SMD.kicad_dru`
-allows that gap between the socket's own pads and holes and nowhere else.
-Check that your fabricator can hold 0.127 mm copper to hole before ordering.
+With [just](https://just.systems/), Python 3 and KiCad 10's `kicad-cli`,
+`just check` is the gate CI runs on every pull request: the two templates'
+libraries identical, ERC finding only the 26 GPIO label warnings, and DRC
+clean with schematic parity on both. The
+[development page](https://cameronbrooks11.github.io/rpi-hat-kicad/development/)
+covers changing a template and building the docs.
 
 ## Credit
 
