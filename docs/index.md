@@ -10,7 +10,7 @@ needs, placed, routed and passing DRC, ready to design on.
 
 ## What you get
 
-| | |
+| Feature | What it is |
 | --- | --- |
 | [**Two templates**](templates.md) | One with a through-hole 2×20 GPIO socket, one with a Samtec surface-mount pass-through socket. |
 | [**The ID EEPROM**](eeprom.md) | A CAT24C32 at address 0x50 with its pull-ups, decoupling, write-protect test point and write-enable jumper, as the HAT+ specification asks. |
