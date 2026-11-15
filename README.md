@@ -55,12 +55,10 @@ Each template has:
 
 ## What the checks report
 
-Run with KiCad 10.0.8, all severities, schematic parity on:
-
-```sh
-kicad-cli sch erc --severity-all RPi_Hat_THT/RPi_Hat_THT.kicad_sch
-kicad-cli pcb drc --severity-all --schematic-parity RPi_Hat_THT/RPi_Hat_THT.kicad_pcb
-```
+`just check` runs ERC and DRC (all severities, schematic parity, zones
+refilled) on both templates and fails on any change from the table below; it
+also fails if the two templates' `RPi_Hat` libraries differ. CI runs it in the
+`kicad/kicad:10.0.6` image on every pull request and push to `main`.
 
 | Template      | ERC | DRC | Unconnected | Parity |
 | ------------- | --- | --- | ----------- | ------ |
