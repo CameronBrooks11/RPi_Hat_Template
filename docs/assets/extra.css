@@ -1,3 +1,9 @@
+/* Material gives every table heading a 5rem minimum, which made the pinout's
+   two-digit "Pin" columns 100 px wide and pushed the table past its column. */
+.md-typeset table:not([class]) th {
+  min-width: 0;
+}
+
 /* Schematic plots are drawn for a white sheet; keep one under them in dark mode. */
 img.plot {
   background: #fff;
